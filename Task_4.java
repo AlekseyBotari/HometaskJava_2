@@ -25,11 +25,23 @@ public class Task_4 {
             int userNumberTask9;
             userNumberTask9 = task9.nextInt();
 
-            if (userNumberTask7 > userNumberTask8 && userNumberTask7 > userNumberTask9) {
+
+            if (userNumberTask7 == userNumberTask8 && userNumberTask7 == userNumberTask9) {
+                System.out.println("Введено три однакові числа");
+            }
+            else if (userNumberTask7 > userNumberTask8 && userNumberTask7 == userNumberTask9) {
+                System.out.println("Перше та третє числа рівні та найбільші");
+            }
+            else if (userNumberTask8 > userNumberTask7 && userNumberTask8 == userNumberTask9) {
+                System.out.println("Друге та третє числа рівні та найбільші");
+            }
+            else if (userNumberTask7 > userNumberTask8 && userNumberTask7 > userNumberTask9) {
                 System.out.println("Перше число найбільше");
-            } else if (userNumberTask8 > userNumberTask9 && userNumberTask8 > userNumberTask7) {
+            }
+            else if (userNumberTask8 > userNumberTask9 && userNumberTask8 > userNumberTask7) {
                 System.out.println("Друге число найбільше");
-            } else {
+            }
+            else {
                 System.out.println("Третє число найбільше");
             }
         }

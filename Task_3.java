@@ -8,17 +8,17 @@ public class Task_3 {
         System.out.println("Введіть два однозначних числа.");
 
         Scanner task7 = new Scanner(System.in);
-        Scanner task8 = new Scanner(System.in);
+
 
         if (!task7.hasNextInt()) {
             System.out.println("Введена буква. Введіть інше перше число.");
-        } else if (!task8.hasNextInt()) {
+        } else if (!task7.hasNextInt()) {
             System.out.println("Введена буква. Введіть інше друге число.");
         } else {
             int num1;
             num1 = task7.nextInt();
             int num2;
-            num2 = task8.nextInt();
+            num2 = task7.nextInt();
             int num3;
             num3 = num1 * num2;
 
