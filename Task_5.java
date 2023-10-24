@@ -17,23 +17,21 @@ public class Task_5 {
         } else if (!task9.hasNextInt()) {
             System.out.println("Помилка в введеному числі. Можливо, що введена буква. Введіть інше третє число.");
         } else {
-            float userNumberTask7;
-            userNumberTask7 = task7.nextFloat();
-            float userNumberTask8;
-            userNumberTask8 = task8.nextFloat();
-            float userNumberTask9;
-            userNumberTask9 = task9.nextFloat();
+            int userNumberTask7;
+            userNumberTask7 = task7.nextInt();
+            int userNumberTask8;
+            userNumberTask8 = task8.nextInt();
+            int userNumberTask9;
+            userNumberTask9 = task9.nextInt();
 
-            float answer;
-            int n = 3;
-
-            answer = (userNumberTask7 + userNumberTask8 + userNumberTask9) / n;
-
-            if ((userNumberTask7 + userNumberTask8 + userNumberTask9) % n == 0) {
-                int answerInt = (int) answer;
-                System.out.println("Середнє з трьох чисел дорівнює " + answerInt);
-            } else {
-                System.out.println("Середнє з трьох чисел дорівнює " + answer);
+            if (userNumberTask7 > userNumberTask8 && userNumberTask7 < userNumberTask9) {
+                System.out.println("Середнє з трьох чисел дорівнює " + userNumberTask7);
+            }
+            else if (userNumberTask8 > userNumberTask7 && userNumberTask8 < userNumberTask9) {
+                System.out.println("Середнє з трьох чисел дорівнює " + userNumberTask8);
+            }
+            else if (userNumberTask9 > userNumberTask8 && userNumberTask9 < userNumberTask7) {
+                System.out.println("Середнє з трьох чисел дорівнює " + userNumberTask9);
             }
         }
     }
