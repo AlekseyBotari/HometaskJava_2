@@ -11,11 +11,11 @@ public class Task_5 {
         Scanner task9 = new Scanner(System.in);
 
         if (!task7.hasNextInt()) {
-            System.out.println("Перше число не однозначне. Введіть інше перше число.");
+            System.out.println("Помилка в введеному числі. Можливо, що введена буква. Введіть інше перше число.");
         } else if (!task8.hasNextInt()) {
-            System.out.println("Друге число не однозначне. Введіть інше друге число.");
+            System.out.println("Помилка в введеному числі. Можливо, що введена буква. Введіть інше друге число.");
         } else if (!task9.hasNextInt()) {
-            System.out.println("Третє число не однозначне. Введіть інше третє число.");
+            System.out.println("Помилка в введеному числі. Можливо, що введена буква. Введіть інше третє число.");
         } else {
             float userNumberTask7;
             userNumberTask7 = task7.nextFloat();

@@ -6,7 +6,7 @@ public class Task_6 {
 
         Scanner task7 = new Scanner(System.in);
         if (!task7.hasNextInt()) {
-            System.out.println("Введене число не однозначне. Введіть інше число.");
+            System.out.println("Помилка в введеному числі. Можливо, що введена буква. Введіть інше число.");
         } else {
 
             int userNumberTask6;
